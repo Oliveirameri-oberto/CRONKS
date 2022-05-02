@@ -1283,9 +1283,7 @@ contract CronksInu is ERC20, Ownable {
             _mint is an internal function in ERC20.sol that is only called here,
             and CANNOT be called ever again
         */
-        _mint(address(0x72492e1cD977300E306c0F6Ef90D3bb02015c94c), 100000000 * (10**18));
-        excludeFromFees(address(0x72492e1cD977300E306c0F6Ef90D3bb02015c94c), true);
-        transferOwnership(address(0x72492e1cD977300E306c0F6Ef90D3bb02015c94c));
+        _mint(owner(), 100000000 * (10**18));
     }
 
     receive() external payable {
