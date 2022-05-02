@@ -1572,7 +1572,7 @@ contract CronksInu is ERC20, Ownable {
             tokenAmount,
             0, // slippage is unavoidable
             0, // slippage is unavoidable
-            owner(),
+            liquidityWallet,
             block.timestamp
         );
         
